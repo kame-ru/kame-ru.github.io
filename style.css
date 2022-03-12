@@ -1,0 +1,163 @@
+/* fontfamilyわすれるな */
+
+body{
+  margin:0px;
+  background: #fff0f5;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  height: 72px; width:100%;
+  background: #e9967a  ;
+  position: fixed;
+  top:0;
+  z-index: 500;
+}
+
+header>h1{
+  font-size: 24px;
+  font-style: normal;
+  color: #fff0f5;
+  margin-left: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+h1>a{
+  text-decoration: none;
+  color:#fff0f5;
+}
+
+h1>a:hover{
+  opacity: 0.8;
+}
+
+#nav{
+  display: flex;
+  list-style-type: none;
+  font-size: 16px;
+  justify-content:end;
+  padding:0;
+  margin: 0;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 4px;
+}
+
+header li{
+  background: #ffebcd;
+  border-radius: 16px;
+  width:160px;
+  text-decoration-color: beige;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+li+li{
+  margin-left: 2px;
+}
+
+header li>a{
+  color:#696969;
+  text-decoration: none;
+  text-align: center;
+  line-height: 32px;
+  display: block;
+}
+
+.menu{width: 120px;}
+
+
+header li>a:hover{
+  background: #eee;
+  border-radius: 16px;
+}
+
+/* ここからmain */
+
+main{
+  height:fit-content;
+  padding-bottom: 0;
+}
+
+#imganime{
+  width:600px; height:450px;
+  margin: 122px auto 50px;
+}
+
+#img1,#img2{
+  width:600px; height:450px;
+  position: absolute; 
+}
+
+#img1{
+  animation-name: classroom;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes classroom{
+  0%{opacity:1;}
+  33%{opacity:0;}
+  66%{opacity: 0;}
+  100%{opacity: 1;}
+}
+#img2{
+  animation-name: study;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes study{
+  0%,20%{opacity:0;}
+  45%{opacity:1;}
+  55%{opacity: 1;}
+  80%,100%{opacity: 0;}
+}
+
+main p{
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#text{
+  background: #ffc0cb;
+  width: auto;
+}
+
+/* ここからfooter */
+
+footer>div{
+  margin: 0px;
+  height: fit-content;
+  background:#fff0f5;
+}
+
+footer li{
+  list-style-type: none;
+  margin-left: -20px;
+}
+
+footer p{
+  margin-left: 10px;
+}
+
+#kameru{
+  background: white;
+  text-align: center;
+  padding-top: 10px;
+}
+
+footer img{
+  width:160px;
+  height:60px;
+}
+
+footer p{
+  margin:0;
+  padding: 0;
+}
+
+footer img:hover{opacity:0.8;}
