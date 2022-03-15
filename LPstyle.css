@@ -1,0 +1,126 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+header h1{
+  margin-left: 24px;
+  font-weight:normal;
+}
+
+header ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+header a{
+  text-decoration: none;
+}
+
+header li+li{
+  margin-left: 20px;
+}
+
+
+/* カルーセルパート */
+.container{
+  margin:16px auto;
+  width: 550px;
+  height:400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.container ul{
+  width:100%;
+  height:100%;
+  display: flex;
+  list-style:none;
+  margin: 0px;
+  padding:0px;
+  transition: transform 0.3s;
+}
+
+.container ul li{
+  width:100%;
+  height:100%;
+  min-width: 100%;
+}
+
+.container li img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+
+#prev, #next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  background:rgba(200, 200, 200, 0.8);
+  color:#000;
+  border: none;
+  border-radius: 4px;
+  transition-duration: 0.3s;
+  padding: 0 8px 4px;
+  cursor: pointer;
+}
+
+#next{
+  right: 0px;
+}
+
+
+#prev:hover, #next:hover{
+  opacity:0.6;
+}
+
+.hidden{
+  display: none;
+}
+
+/* カルーセルパート終わり */
+
+.text{
+  margin:100px 0 0;
+  padding: 0;
+  text-align: center;
+  font-size: 24px;
+  background: black;
+  color: white;
+}
+
+#ad{
+  width: 30%;
+  position: fixed;
+  bottom: 8%; 
+  left:50%;
+  transform: translateX(-50%);
+}
+
+#ad img{
+  width:100%;
+  object-fit: cover;
+}
+
+#ad img:hover{
+  cursor: pointer;
+}
+
+#adv{
+  transition: transform 3s;
+}
+
+footer{
+  height:200px;
+  background: rgb(200, 200, 200);
+  text-align: center;
+}
+
+footer p+p{
+  margin-top: 100px;
+}
