@@ -80,68 +80,65 @@ main{
   padding-bottom: 0;
 }
 
-#imganime{
-  width:600px; height:450px;
-  margin: 122px auto 50px;
-}
-
-#img1,#img2{
-  width:600px; height:450px;
-  position: absolute; 
-}
-
-#img1{
-  animation-name: classroom;
-  animation-duration: 12s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes classroom{
-  0%{opacity:1;}
-  33%{opacity:0;}
-  66%{opacity: 0;}
-  100%{opacity: 1;}
-}
-#img2{
-  animation-name: study;
-  animation-duration: 12s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes study{
-  0%,20%{opacity:0;}
-  45%{opacity:1;}
-  55%{opacity: 1;}
-  80%,100%{opacity: 0;}
-}
-
-main p{
-  font-size: 20px;
-  margin-left: 10px;
-}
-
-#text{
-  background: #ffc0cb;
-  width: auto;
-}
-
-#update{
+.info{
+  background: #DDDDDD;
   width: 80%;
+  height: fit-content;
+  border: solid #777777	;
+  margin: 100px auto 50px;
+}
+
+.nav{
+  font-size: 24px;
+  color:#696969;
+}
+
+.mainnav li+li{
+  padding-top: 4px;
+}
+
+a:hover{
+  opacity: .7;
+}
+
+section{
+  padding-left: 2%;
+  background: white;
+  border-top: #FF69A3 solid;
+  border-bottom: #FF69A3 solid;
+}
+
+section h1{
+  margin: 0;
+  padding: 0;
+}
+
+section .info{
   margin: 0 auto;
-  border: black solid;
 }
 
-#update h1{
-  text-align: center;
-  border-bottom: black solid;
+section .nav{
+  font-size: 16px;
 }
 
-#update ul{
+section ul{
   list-style: none;
-  overflow: scroll;
-  height: 100px;
+}
+section ul li{
+  font-size: 20px;
+}
+
+section ul li+li{
+  padding-top: 5px;
+}
+
+section p{
+  margin: 0;
+  padding: 0;
+}
+
+section + section{
+  border-top: none;
 }
 
 /* ここからfooter */
@@ -170,8 +167,6 @@ footer p{
 footer img{
   width:160px;
   height:60px;
-  cursor: pointer;
-  transition: transform 4.5s;
 }
 
 footer p{
@@ -181,6 +176,7 @@ footer p{
 
 footer img:hover{opacity:0.8;}
 
+
 /* レスポンシブに関する部分 */
 @media (min-width:0px) and (max-width:600px){
 
@@ -189,18 +185,7 @@ footer img:hover{opacity:0.8;}
   
 
   /* body部分 */
-
-  #imganime{
-    width:300px; height:225px;
-    margin: 122px auto 50px;
-  }
-  
-  #img1,#img2{
-    width:300px; height:225px;
-    position: absolute; 
-  }
-
-  #text p{
+  section ul li{
     font-size: 16px;
   }
   .info{
@@ -209,18 +194,16 @@ footer img:hover{opacity:0.8;}
   }
 
 }
+
 @media (min-width:600px) and (max-width:800px){
   /* body部分 */
 
   
 
-  #text p{
+  section ul li{
     font-size: 16px;
   }
-  .info{
-    border: solid #777777	;
-    margin: 138px auto 50px;
-  }
+  
 
 }
 

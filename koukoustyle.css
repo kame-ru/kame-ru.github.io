@@ -85,7 +85,7 @@ main{
   width: 80%;
   height: fit-content;
   border: solid #777777	;
-  margin: 100px auto;
+  margin: 100px auto 50px;
 }
 
 .nav{
@@ -171,3 +171,21 @@ footer p{
 }
 
 footer img:hover{opacity:0.8;}
+
+/* レスポンシブに関する部分 */
+@media (min-width:0px) and (max-width:600px){
+
+  header {height: 108px;}
+  
+  
+
+  /* body部分 */
+  section ul li{
+    font-size: 16px;
+  }
+  .info{
+    border: solid #777777	;
+    margin: 138px auto 50px;
+  }
+
+}
