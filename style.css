@@ -1,5 +1,7 @@
 /* fontfamilyわすれるな */
 
+
+
 body{
   margin:0px;
   background: #fff0f5;
@@ -124,7 +126,7 @@ main p{
 
 #text{
   background: #ffc0cb;
-  width: auto;
+  /* width: auto; */
 }
 
 #update{
@@ -202,7 +204,7 @@ footer img:hover{opacity:0.8;}
     position: absolute; 
   }
 
-  #text p{
+  main p{
     font-size: 16px;
   }
   .info{
