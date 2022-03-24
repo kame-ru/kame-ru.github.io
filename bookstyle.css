@@ -154,8 +154,8 @@ footer img:hover{opacity:0.8;}
 /* レスポンシブに関する部分 */
 @media (min-width:0px) and (max-width:600px){
   header {height: 108px;}
-  header h1{font-size: 28px;}
-  header li{font-size: 24px;}
+  header h1{font-size: 24px;}
+  header li{font-size: 20px;}
   
 
   /* body部分 */
@@ -182,13 +182,12 @@ footer img:hover{opacity:0.8;}
   /* 記事パート */
 
   section img{
-    width:40%;
-    height: 64%;
+    width:50%;
+    height: 80%;
     object-fit: cover;
     outline: #eee solid;
-    order: 1;
     position:relative;
-    left: 30%;
+    left: 25%;
   }
   
   .container{
@@ -196,8 +195,8 @@ footer img:hover{opacity:0.8;}
   }
   
   .text{
-    margin-right: 30px;
-    font-size: 24px;
+    margin-right: 10px;
+    font-size: 16px;
   }
 
 }
