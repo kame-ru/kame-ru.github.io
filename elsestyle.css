@@ -118,7 +118,7 @@ section .info{
 }
 
 section .nav{
-  font-size: 16px;
+  font-size: 20px;
 }
 
 section ul{
@@ -179,9 +179,9 @@ footer img:hover{opacity:0.8;}
 
 /* レスポンシブに関する部分 */
 @media (min-width:0px) and (max-width:600px){
-
   header {height: 108px;}
-  
+  header h1{font-size: 28px;}
+  header li{font-size: 24px;}
   
 
   /* body部分 */
@@ -192,18 +192,14 @@ footer img:hover{opacity:0.8;}
     border: solid #777777	;
     margin: 138px auto 50px;
   }
-
-}
-
-@media (min-width:600px) and (max-width:800px){
-  /* body部分 */
-
-  
-
-  section ul li{
-    font-size: 16px;
+  .nav{
+    font-size: 32px;
+    color:#696969;
   }
-  
+  section .nav{
+    font-size: 28px;
+  }
+
 
 }
 

@@ -95,6 +95,7 @@ section img{
   height: 48%;
   object-fit: cover;
   outline: #eee solid;
+  order: 1;
 }
 
 .container{
@@ -152,35 +153,52 @@ footer img:hover{opacity:0.8;}
 
 /* レスポンシブに関する部分 */
 @media (min-width:0px) and (max-width:600px){
-
   header {height: 108px;}
-  
+  header h1{font-size: 28px;}
+  header li{font-size: 24px;}
   
 
   /* body部分 */
   #title{
-    margin-top: 140px;
+    margin-top: 128px;
     margin-left: 20px;
-    margin-bottom: 20px;
   }
 
-  .text{
-    margin-right: 15px;
+  section ul li{
     font-size: 16px;
   }
-  
+  .info{
+    border: solid #777777	;
+    margin: 138px auto 50px;
+  }
+  .nav{
+    font-size: 32px;
+    color:#696969;
+  }
+  section .nav{
+    font-size: 28px;
+  }
 
-}
+  /* 記事パート */
 
-@media (min-width:600px) and (max-width:800px){
-  /* body部分 */
-
-  
-  .text{
-    margin-right: 15px;
-    font-size: 18px;
+  section img{
+    width:40%;
+    height: 64%;
+    object-fit: cover;
+    outline: #eee solid;
+    order: 1;
+    position:relative;
+    left: 30%;
   }
   
+  .container{
+    display: block;
+  }
+  
+  .text{
+    margin-right: 30px;
+    font-size: 24px;
+  }
 
 }
 
