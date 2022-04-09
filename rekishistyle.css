@@ -144,12 +144,23 @@ section p{
 
 /* ここから問題部分 */
 
+.SP{
+    display: none;
+}
+
+section img{
+  width:140px;
+  height:140px;
+  background-size: cover;
+}
+
 dt{
   padding: 4px;
   cursor: pointer;
   user-select: none;
   position: relative;
   font-size: 20px;
+  margin-right: 50px;
 }
 
 dd{
@@ -157,13 +168,14 @@ dd{
   display: none;
   font-size: 20px;
   color:red;
+  margin-right: 50px;
 }
 
 dt::after{
   content:'+';
   position: absolute;
   top:4px;
-  right:50px;
+  right:-20px;
 }
 
 dl>div.appear dd{
@@ -184,6 +196,9 @@ dl>div.appear dt::after{
   transition:transform .3s;
 }
 
+.returntop{
+  font-size: 20px;
+}
 
 /* ここからfooter */
 
@@ -260,6 +275,7 @@ dt{
   user-select: none;
   position: relative;
   font-size: 18px;
+  margin-right: 0;
 }
 
 section div+div{
@@ -271,10 +287,21 @@ dd{
   display: none;
   font-size: 20px;
   color:red;
+  margin-right: 0px;
 }
 
 dt::after{
   display: none; 
 }
 
+.PC{
+  display: none;
 }
+
+.SP{
+  display: block;
+}
+
+}
+
+
