@@ -200,6 +200,22 @@ dl>div.appear dt::after{
   font-size: 20px;
 }
 
+#houou{
+  width: 200px;
+  height: 130px;
+}
+
+.explain{
+  border-top: #FF69A3 dotted 2px;
+  margin-left: -50px;
+}
+
+.explain p{
+  margin-top: 10px;
+  margin-left: 50px;
+  font-size: 20px;
+}
+
 /* ここからfooter */
 
 footer>div{
@@ -304,4 +320,13 @@ dt::after{
 
 }
 
+.explain{
+  border-top: #FF69A3 none 2px;
+  margin-left: 0px;
+}
 
+.explain p{
+  margin-top: 0px;
+  margin-left: 0px;
+  font-size: 16px;
+}
